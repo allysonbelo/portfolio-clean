@@ -1,0 +1,63 @@
+:root {
+    --font-heebo: 'Heebo', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+
+    --color-back: #000000;
+    --color-white: #ffffff;
+    --color-light-gray: #737272;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: var(--font-heebo);
+}
+
+h1 {
+    font-size: 78px;
+    color: var(--color-back);
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h5,
+p,
+span,
+a {
+    font-family: var(--font-roboto);
+}
+
+h5,
+h6 {
+    font-size: 14px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--color-light-gray);
+}
+
+a{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+span{
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--color-light-gray);
+}

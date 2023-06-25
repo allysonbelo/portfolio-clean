@@ -11,14 +11,22 @@
 <body <?php body_class(); ?>>
 
     <div id="page">
+
         <header>
+            <div class="wrapper">
+                <div class="header">
+                    <div>
+                        <span>ABC.</span>
+                    </div>
 
-            <div>
-                Logo
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>Sobre</li>
+                            <li>Projetos</li>
+                            <li>Contato</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-
-            <nav>
-                menu
-            </nav>
-
         </header>

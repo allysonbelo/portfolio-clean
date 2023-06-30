@@ -16,7 +16,7 @@
             <div class="wrapper">
                 <div class="header">
                     <div>
-                        <span>ABC.</span>
+                        <h4>ABC.</h4>
                     </div>
 
                     <nav>

@@ -1,0 +1,46 @@
+.banner {
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas:
+        "image"
+        "conteudo";
+}
+
+.banner__image {
+    grid-area: image;
+}
+
+.banner__content {
+    grid-area: conteudo;
+}
+
+.blob-container {
+    width: clamp(308px, 50vw, 500px);
+}
+
+.blob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__content {
+    flex: 1.1;
+    display: grid;
+    row-gap: 20px;
+}
+
+.banner__content h1 {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+    .banner {
+        margin-top: 80px;
+        grid-template-areas:
+            "image conteudo";
+        min-height: calc(100vh - 120px);
+        align-items: center;
+        justify-content: center;
+    }
+}

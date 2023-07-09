@@ -1,0 +1,34 @@
+{
+  "name": "abc-portfolio",
+  "version": "1.0.0",
+  "description": "This is my personal website with wordpress",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allysonbelo/portfolio-clean.git"
+  },
+  "keywords": [
+    "wordpress-theme",
+    "personal-website",
+    "front-end",
+    "wordpress-developer"
+  ],
+  "author": "Allyson Belo Cavalcante",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/scripts": "*",
+    "normalize.css": "^8.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/allysonbelo/portfolio-clean/issues"
+  },
+  "homepage": "https://github.com/allysonbelo/portfolio-clean#readme"
+}

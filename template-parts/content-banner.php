@@ -24,7 +24,7 @@
     </div>
     <div class="banner__content">
         <h5>This is me</h5>
-        <h1>Allyson Belo</h1>
+        <h1 id="title">Allyson Belo</h1>
         <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
         <a class="button animate__bounceOutRight" href="https://preview.colorlib.com/#ronin" target="_blank">My projects</a>
     </div>

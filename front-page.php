@@ -8,6 +8,7 @@
         <section>Projects</section>
         <section>Contact</section>
     </main>
+
 </div>
 
 <?php get_footer() ?>

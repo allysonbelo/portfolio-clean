@@ -14,6 +14,7 @@ function abc_dev_load_scripts()
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap', array(), null);
 
     // Javascript 
+    wp_enqueue_script('main-js', get_theme_file_uri('/js/main.js'), array(), filemtime(get_template_directory() . '/js/main.js'), true);
 }
 
 add_action('wp_enqueue_scripts', 'abc_dev_load_scripts');

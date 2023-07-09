@@ -4,6 +4,8 @@
     grid-template-areas:
         "image"
         "conteudo";
+        align-items: center;
+    justify-content: center;
 }
 
 .banner__image {
@@ -28,10 +30,65 @@
     flex: 1.1;
     display: grid;
     row-gap: 20px;
+    overflow: hidden;
+    width: clamp(300px, 48vw, 626px);
 }
 
 .banner__content h1 {
     text-transform: uppercase;
+    transition: margin-left .1s ease;
+}
+
+.banner__content h5,
+.banner__content h1,
+.banner__content p,
+.banner__content a{
+    margin-left: -9999px;
+}
+
+.banner__image{
+    opacity: 0;
+}
+
+.banner__image{
+    animation: showImage 3s forwards;
+}
+
+.show__element .banner__content h5{
+    animation: showTitle 1s forwards;
+}
+
+.show__element .banner__content h1{
+    animation: showTitle 2s forwards;
+}
+
+.show__element .banner__content p{
+    animation: showTitle 3s forwards;
+    height: 52px;
+    max-width: 500px;
+}
+
+.show__element .banner__content a{
+    animation: showTitle 4s forwards;
+    margin-top: 20px;
+}
+
+@keyframes showTitle {
+    0%{
+        margin-left: -9999px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+@keyframes showImage {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -42,5 +99,9 @@
         min-height: calc(100vh - 120px);
         align-items: center;
         justify-content: center;
+    }
+
+    .show__element .banner__content a{
+        margin-top: 0px;
     }
 }

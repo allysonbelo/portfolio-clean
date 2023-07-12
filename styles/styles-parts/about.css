@@ -1,0 +1,77 @@
+.about__section{
+    padding-top: 70px;
+}
+
+.about {
+    display: grid;
+    grid-template-areas:
+        "about"
+        "skills";
+    gap: 40px;
+}
+
+.about__content {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__skills {
+    grid-area: skills;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    height: 110px;
+    flex: 1 1 60px;
+}
+
+.about__icon .about__icon--svg {
+    width: 60px;
+    padding: 10px;
+}
+
+.separator {
+    width: 80%;
+    height: 3px;
+    background-color: #d5d5d5;
+    position: absolute;
+    bottom: 25px;
+    transition: bottom .2s ease;
+}
+
+.about__icon:hover .separator {
+    bottom: 0px;
+}
+
+.icon__name {
+    position: absolute;
+    bottom: 0px;
+    transition: bottom .2s ease;
+}
+
+.about__icon:hover .icon__name {
+    bottom: 15px;
+}
+
+@media screen and (min-width: 769px) {
+    .about {
+        display: grid;
+        grid-template-areas: "about skills";
+        grid-template-columns: 1fr 1fr;
+    }
+}

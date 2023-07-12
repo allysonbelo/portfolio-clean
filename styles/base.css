@@ -8,6 +8,10 @@
     --color-bg-site: #f3f3f3;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #page {
     background-color: var(--color-bg-site);
 }
@@ -36,6 +40,7 @@ h1 {
 h2 {
     font-size: 38px;
     font-weight: bold;
+    text-align: center;
 }
 
 h3 {

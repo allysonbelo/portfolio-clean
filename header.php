@@ -12,7 +12,7 @@
 
     <div id="page">
 
-        <header>
+        <header id="header">
             <div class="wrapper">
                 <div class="header">
                     <div>

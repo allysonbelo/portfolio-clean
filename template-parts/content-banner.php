@@ -28,4 +28,17 @@
         <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
         <a class="button animate__bounceOutRight" href="https://preview.colorlib.com/#ronin" target="_blank">My projects</a>
     </div>
+    <div class="arrow">
+        <a href="#about">
+            <svg class="arrow_one" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-357 240-597l42-42 198 198 198-198 42 42-240 240Z" />
+            </svg>
+            <svg class="arrow_two" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-357 240-597l42-42 198 198 198-198 42 42-240 240Z" />
+            </svg>
+            <svg class="arrow_three" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-357 240-597l42-42 198 198 198-198 42 42-240 240Z" />
+            </svg>
+        </a>
+    </div>
 </div>

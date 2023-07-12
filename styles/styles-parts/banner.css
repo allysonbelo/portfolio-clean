@@ -3,9 +3,9 @@
     display: grid;
     grid-template-areas:
         "image"
-        "conteudo";
-        align-items: center;
-    justify-content: center;
+        "conteudo"
+        "arrow";
+    align-items: center;
 }
 
 .banner__image {
@@ -31,7 +31,7 @@
     display: grid;
     row-gap: 20px;
     overflow: hidden;
-    width: clamp(300px, 48vw, 626px);
+    /* width: clamp(300px, 48vw, 426px); */
 }
 
 .banner__content h1 {
@@ -42,51 +42,88 @@
 .banner__content h5,
 .banner__content h1,
 .banner__content p,
-.banner__content a{
+.banner__content a {
     margin-left: -9999px;
 }
 
-.banner__image{
+.banner__image {
     opacity: 0;
 }
 
-.banner__image{
+.banner__image {
     animation: showImage 3s forwards;
 }
 
-.show__element .banner__content h5{
+.show__element .banner__content h5 {
     animation: showTitle 1s forwards;
 }
 
-.show__element .banner__content h1{
+.show__element .banner__content h1 {
     animation: showTitle 2s forwards;
 }
 
-.show__element .banner__content p{
+.show__element .banner__content p {
     animation: showTitle 3s forwards;
-    height: 52px;
-    max-width: 500px;
+    /* height: 52px; */
+    max-width: 340px;
 }
 
-.show__element .banner__content a{
+.show__element .banner__content a {
     animation: showTitle 4s forwards;
-    margin-top: 20px;
+}
+
+.arrow {
+    grid-area: arrow;
+    background-color: rgb(216, 84, 216);
+    position: relative;
+    margin-top: 40px;
+}
+
+.arrow_one,
+.arrow_two,
+.arrow_three {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.arrow_one{
+    top: -10px;
+    width: 30px;
+    opacity: 0;
+    animation: showImage 2s infinite 5s;
+}
+
+.arrow_two{
+    top: 0px;
+    width: 50px;
+    opacity: 0;
+    animation: showImage 2s infinite 5.1s;
+}
+
+.arrow_three{
+    top: 10px;
+    width: 70px;
+    opacity: 0;
+    animation: showImage 2s infinite 5.2s;
 }
 
 @keyframes showTitle {
-    0%{
+    0% {
         margin-left: -9999px;
     }
-    100%{
+
+    100% {
         margin-left: 0px;
     }
 }
 
 @keyframes showImage {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -95,13 +132,42 @@
     .banner {
         margin-top: 80px;
         grid-template-areas:
-            "image conteudo";
+            "image conteudo"
+            "arrow arrow";
+        grid-template-columns: .5fr 2fr;
         min-height: calc(100vh - 120px);
         align-items: center;
         justify-content: center;
     }
 
-    .show__element .banner__content a{
+    .show__element .banner__content p {
+        height: 52px;
+        max-width: 500px;
+    }
+
+    .show__element .banner__content a {
         margin-top: 0px;
     }
+
+    .arrow_one{
+        top: -100px;
+        width: 40px;
+        opacity: 0;
+        animation: showImage 2s infinite 5s;
+    }
+    
+    .arrow_two{
+        top: -90px;
+        width: 60px;
+        opacity: 0;
+        animation: showImage 2s infinite 5.1s;
+    }
+    
+    .arrow_three{
+        top: -80px;
+        width: 80px;
+        opacity: 0;
+        animation: showImage 2s infinite 5.2s;
+    }
+    
 }

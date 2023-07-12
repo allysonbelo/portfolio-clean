@@ -1,0 +1,8 @@
+@import url('reset.css');
+@import url('base.css');
+@import url('header.css');
+@import url('front-page.css');
+
+/* Parts  */
+@import url('styles-parts/banner.css');
+@import url('styles-parts/about.css');

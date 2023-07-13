@@ -70,6 +70,7 @@
 
 .show__element .banner__content a {
     animation: showTitle 4s forwards;
+    color: var(--color-white);
 }
 
 .arrow {

@@ -6,6 +6,8 @@
     --color-white: #ffffff;
     --color-light-gray: #737272;
     --color-bg-site: #f3f3f3;
+    --color-linear-left-blue: rgba(0, 212, 255, 1);
+    --color-linear-right-blue: rgba(30, 144, 255, 1);
 }
 
 *{
@@ -22,9 +24,10 @@ html{
 
 .wrapper {
     max-width: 1126px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 h1,
@@ -42,9 +45,9 @@ h1 {
 }
 
 h2 {
-    font-size: 38px;
+    font-size: clamp(28px, 4vw, 38px);
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 h3 {
@@ -92,7 +95,7 @@ span {
 }
 
 .button {
-    background-image: linear-gradient(to left, rgba(30, 144, 255, 1) 48%, rgba(0, 212, 255, 1) 100%);
+    background-image: linear-gradient(to left, var(--color-linear-right-blue) 48%, var(--color-linear-left-blue) 100%);
     background-size: 200% auto;
     border-radius: 4px;
     max-width: 150px;
@@ -104,4 +107,10 @@ span {
 
 .button:hover {
     background-position: right center;
+}
+
+@media screen and (min-width: 769px) {
+    h2 {
+        text-align: left;
+    }
 }

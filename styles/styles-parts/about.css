@@ -37,7 +37,7 @@
     align-items: center;
     position: relative;
     height: 110px;
-    flex: 1 1 60px;
+    flex: 1 1 80px;
 }
 
 .about__icon .about__icon--svg {
@@ -73,5 +73,12 @@
         display: grid;
         grid-template-areas: "about skills";
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about__section {
+        max-width: 290px;
+        margin: 0 auto;
     }
 }

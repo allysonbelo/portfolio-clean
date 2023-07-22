@@ -2,6 +2,7 @@
 @import url('base.css');
 @import url('header.css');
 @import url('front-page.css');
+@import url('footer.css');
 
 /* Parts  */
 @import url('styles-parts/banner.css');

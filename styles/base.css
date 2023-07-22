@@ -8,6 +8,7 @@
     --color-bg-site: #f3f3f3;
     --color-linear-left-blue: rgba(0, 212, 255, 1);
     --color-linear-right-blue: rgba(30, 144, 255, 1);
+    --color-dark-gray: rgb(65 65 65);
 }
 
 *{
@@ -28,6 +29,7 @@ html{
     padding-right: 20px;
     margin: 0 auto;
     overflow: hidden;
+    width: 100%;
 }
 
 h1,

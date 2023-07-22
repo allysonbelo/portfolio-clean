@@ -15,6 +15,10 @@ header {
     transition: min-height .3s ease;
 }
 
+.logo .logo__header{
+    color: var(--color-back);
+}
+
 nav ul {
     display: flex;
     gap: 15px;

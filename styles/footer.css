@@ -1,0 +1,130 @@
+.footer {
+    background-color: var(--color-dark-gray);
+    height: 30vh;
+    box-shadow: 0px 21px 36px 25px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+.footer__container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "logo social"
+        "other other"
+        "copy copy";
+    row-gap: 20px;
+    justify-content: space-between;
+}
+
+.footer__container--other {
+    grid-area: other;
+    display: grid;
+    row-gap: 10px;
+    color: var(--color-white);
+}
+
+.other__menu--list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.footer__container--social {
+    grid-area: social;
+    grid-area: social;
+    display: grid;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    color: var(--color-white);
+}
+
+.footer__container--copy {
+    grid-area: copy;
+    gap: 20px;
+}
+
+.footer__container--logo {
+    grid-area: logo;
+    height: 40px;
+    position: relative;
+    display: flex;
+    /* gap: 20px; */
+}
+
+.footer__container--logo .logo__footer {
+    color: var(--color-white);
+    font-weight: bold;
+
+    background-image: linear-gradient(to right, var(--color-linear-left-blue) 40%, var(--color-linear-right-blue) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    transition: scale 0.3s ease;
+}
+
+.footer__container--logo .logo__footer:hover {
+    scale: 1.2;
+}
+
+.footer__container--logo img {
+    max-width: 120px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer__social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social a {
+    width: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer__social svg,
+.footer__social span {
+    transition: transform .3s ease;
+}
+
+.footer__social span {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    position: absolute;
+    left: -3px;
+}
+
+.footer__social svg path,
+.footer__social span {
+    fill: var(--color-white);
+    color: var(--color-white);
+}
+
+.footer__social a:hover svg,
+.footer__social a:hover span {
+    transform: translate(-3px);
+}
+
+@media screen and (min-width: 769px) {
+    .footer__container {
+        grid-template-areas:
+            "logo other social"
+            "copy copy copy";
+        grid-template-columns: 100px 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer__container--other {
+        display: grid;
+        justify-content: center;
+    }
+}

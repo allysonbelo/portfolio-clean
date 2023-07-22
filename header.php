@@ -15,8 +15,16 @@
         <header id="header">
             <div class="wrapper">
                 <div class="header">
-                    <div>
-                        <h4>ABC.</h4>
+                    <div class="logo">
+                        <?php if (has_custom_logo()) {
+                            the_custom_logo();
+                        } else {
+                        ?>
+                            <a href="<?php echo home_url('/') ?>">
+                                <h4 class="logo__header"><?php bloginfo('name') ?></h4>
+                            </a>
+                        <?php
+                        } ?>
                     </div>
 
                     <nav>

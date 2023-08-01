@@ -1,0 +1,85 @@
+.contact__section {
+    min-height: 30vh;
+    padding-bottom: 40px;
+}
+
+.contact__wrapper {
+    display: grid;
+    gap: 40px;
+    grid-template-areas:
+        'contact-left'
+        'contact-right';
+}
+
+.contact__wrapper--left {
+    grid-area: contact-left;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__wrapper--right {
+    grid-area: contact-right;
+}
+
+.contact__content {
+    display: grid;
+    row-gap: 20px;
+}
+
+.contact__content h3 {
+    max-width: 400px;
+    text-align: center;
+}
+
+.contact__lottie {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__container form {
+    margin: 0 auto;
+    display: grid;
+    max-width: 500px;
+    gap: 10px;
+}
+
+.contact__container form input,
+.contact__container form textarea {
+    height: 35px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--color-border);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact__container form textarea {
+    height: 100px;
+    resize: none
+}
+
+.contact__container .button {
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+    .contact__wrapper {
+        display: grid;
+        gap: 40px;
+        grid-template-areas:
+            'contact-left contact-right';
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact__content h3 {
+        text-align: left;
+    }
+
+    .contact__lottie {
+        justify-content: left;
+    }
+}

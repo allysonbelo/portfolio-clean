@@ -9,13 +9,14 @@
     --color-linear-left-blue: rgba(0, 212, 255, 1);
     --color-linear-right-blue: rgba(30, 144, 255, 1);
     --color-dark-gray: rgb(65 65 65);
+    --color-border: #cfcfcf;
 }
 
-*{
+* {
     box-sizing: border-box
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -75,7 +76,9 @@ h6 {
     letter-spacing: 1.8px;
 }
 
-p {
+p,
+input,
+textarea {
     font-size: 14px;
     line-height: 26px;
     color: var(--color-light-gray);

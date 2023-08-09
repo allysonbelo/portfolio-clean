@@ -75,7 +75,6 @@
 
 .arrow {
     grid-area: arrow;
-    background-color: rgb(216, 84, 216);
     position: relative;
     margin-top: 40px;
 }

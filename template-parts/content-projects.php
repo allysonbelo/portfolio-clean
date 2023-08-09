@@ -25,8 +25,13 @@
                 }
                 ?>
                 <div class="projects__card--content">
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
-                    <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <?php if (has_excerpt()) {
+                        echo '<p>' . wp_trim_words(get_the_excerpt(), 8) . '</p>';
+                    } else {
+                        echo '<p>' . wp_trim_words(get_the_content(), 5) . '</p>';
+                    }
+                    ?>
                 </div>
             </article>
 

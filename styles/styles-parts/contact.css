@@ -30,6 +30,7 @@
 .contact__content h3 {
     max-width: 400px;
     text-align: center;
+    line-height: 30px;
 }
 
 .contact__lottie {

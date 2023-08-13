@@ -45,6 +45,10 @@
     gap: 20px;
 }
 
+.footer__container--copy p{
+    color: var(--color-text-footer);
+}
+
 .footer__container--logo {
     grid-area: logo;
     height: 40px;

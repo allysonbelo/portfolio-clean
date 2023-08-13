@@ -39,37 +39,7 @@
     transition: margin-left .1s ease;
 }
 
-.banner__content h5,
-.banner__content h1,
-.banner__content p,
-.banner__content a {
-    margin-left: -9999px;
-}
-
-.banner__image {
-    opacity: 0;
-}
-
-.banner__image {
-    animation: showImage 3s forwards;
-}
-
-.show__element .banner__content h5 {
-    animation: showTitle 1s forwards;
-}
-
-.show__element .banner__content h1 {
-    animation: showTitle 2s forwards;
-}
-
-.show__element .banner__content p {
-    animation: showTitle 3s forwards;
-    /* height: 52px; */
-    max-width: 340px;
-}
-
 .show__element .banner__content a {
-    animation: showTitle 4s forwards;
     color: var(--color-white);
 }
 
@@ -91,21 +61,21 @@
     top: -10px;
     width: 30px;
     opacity: 0;
-    animation: showImage 2s infinite 5s;
+    animation: showImage 2s infinite 2s;
 }
 
 .arrow_two{
     top: 0px;
     width: 50px;
     opacity: 0;
-    animation: showImage 2s infinite 5.1s;
+    animation: showImage 2s infinite 2.1s;
 }
 
 .arrow_three{
     top: 10px;
     width: 70px;
     opacity: 0;
-    animation: showImage 2s infinite 5.2s;
+    animation: showImage 2s infinite 2.2s;
 }
 
 @keyframes showTitle {
@@ -129,6 +99,21 @@
 }
 
 @media screen and (min-width: 769px) {
+    .banner__content h5,
+    .banner__content h1,
+    .banner__content p,
+    .banner__content a {
+        margin-left: -9999px;
+    }
+    
+    .banner__image {
+        opacity: 0;
+    }
+    
+    .banner__image {
+        animation: showImage 3s forwards;
+    }
+
     .banner {
         margin-top: 80px;
         grid-template-areas:
@@ -140,13 +125,23 @@
         justify-content: center;
     }
 
+    .show__element .banner__content h5 {
+        animation: showTitle 1s forwards;
+    }
+
+    .show__element .banner__content h1 {
+        animation: showTitle 2s forwards;
+    }
+
     .show__element .banner__content p {
         height: 52px;
         max-width: 500px;
+        animation: showTitle 3s forwards;
     }
 
     .show__element .banner__content a {
         margin-top: 0px;
+        animation: showTitle 4s forwards;
     }
 
     .arrow_one{

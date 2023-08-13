@@ -66,7 +66,13 @@ function handleScrollSidebar() {
       aside.style.position = 'fixed';
       aside.style.top = '130px';
       aside.style.bottom = '';
-      if (pageTop > content.offsetHeight + 50) {
+      console.log('pageTop: ' + pageTop);
+      console.log('Content: ' + content.offsetHeight);
+      console.log('Content: ' + aside.offsetHeight);
+      if (pageTop == content.offsetHeight) {
+        console.log('Igual');
+      }
+      if (pageTop >= content.offsetHeight + 50) {
         aside.style.position = 'absolute';
         aside.style.bottom = '0px';
         aside.style.top = '';

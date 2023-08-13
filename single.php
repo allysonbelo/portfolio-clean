@@ -7,12 +7,12 @@
             $post_bg = get_field('post_bg');
             ?>
 
-            <div class="single__header" <?php if ($post_bg) : echo 'style="background: url(' . $post_bg . ') no-repeat center center / cover; opacity: .5;"';
-                                        else : echo 'style="background: rgb(230, 230, 230);"';
-                                        endif; ?>>
+            <div class="single__wrapper--header">
+                <div class="single__header">
+                    <h1 class="single__title"> <?php the_title() ?></h1>
+                    <img class="single__header--image" src=" <?php echo $post_bg ?>" alt="" loading="lazy">
+                </div>
 
-
-                <h1 class="single__title"> <?php the_title() ?></h1>
             </div>
 
             <div class="single__content">
@@ -116,7 +116,7 @@
                                     the_post_thumbnail("large");
                                 } else {
                                 ?>
-                                    <img src="<?php echo get_theme_file_uri('/img/default-image.webp') ?>" alt="">
+                                    <img src="<?php echo get_theme_file_uri('/img/default-image.webp') ?>" alt="" loading="lazy">
                                 <?php
                                 }
                                 ?>

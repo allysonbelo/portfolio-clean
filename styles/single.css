@@ -7,11 +7,11 @@
 
 .single__header {
     position: absolute;
-    min-height: clamp(25vh, 23vw, 35vh);
+    min-height: clamp(25vh, 23vw, 30vh);
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 70px;
+    top: 100px;
     left: 0;
     width: 100%;
     background-color: rgb(230, 230, 230);
@@ -23,18 +23,6 @@
     font-size: clamp(30px, 5.5vw, 48px);
     text-align: center;
     max-width: 1091px;
-    position: relative;
-    z-index: 1;
-    color: #ffffff;
-    text-shadow: 4px 3px 5px black;
-}
-
-.single__header--image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: .6;
 }
 
 .single__header--tags {
@@ -50,7 +38,7 @@
 }
 
 .single__content--breadcrumbs {
-    display: block;
+    display: none;
 }
 
 .single__content--position {
@@ -160,14 +148,14 @@
 
     .single__aside {
         background-color: var(--color-white);
-        padding: 15px 10px;
+        padding: 15px 35px;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: static;
         z-index: 2;
-        max-width: clamp(245px, 29.8vw, 353.66px);
-        /* min-height: 353.66px; */
+        max-width: 353.66px;
+        min-height: 353.66px;
         height: auto;
         width: 100%;
         row-gap: 30px;
@@ -195,7 +183,6 @@
     .single__aside__content h3 {
         text-align: center;
         width: 100%;
-        font-size: clamp(16px, 3.1vw, 30px);
     }
 
     .single__aside__content h3::after {

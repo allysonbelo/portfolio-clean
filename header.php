@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/81cf49532b.js" crossorigin="anonymous"></script>
-    <meta name="description" content="Explore os projetos impressionantes de um talentoso desenvolvedor front-end. Descubra o portfólio do ABC e mergulhe no mundo do design atraente, interfaces intuitivas e experiências digitais envolventes.">
     <?php wp_head(); ?>
 </head>
 

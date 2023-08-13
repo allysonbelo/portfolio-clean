@@ -29,7 +29,7 @@
         <a class="button animate__bounceOutRight" href="https://preview.colorlib.com/#ronin" target="_blank">My projects</a>
     </div>
     <div class="arrow">
-        <a href="#about" aria-label="Link ancora para a seção Sobre">
+        <a href="#about">
             <svg class="arrow_one" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-357 240-597l42-42 198 198 198-198 42 42-240 240Z" />
             </svg>

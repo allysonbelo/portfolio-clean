@@ -4,13 +4,12 @@
 
     --color-back: #000000;
     --color-white: #ffffff;
-    --color-light-gray: #4F4F4F;
+    --color-light-gray: #737272;
     --color-bg-site: #f3f3f3;
     --color-linear-left-blue: rgba(0, 212, 255, 1);
-    --color-linear-right-blue: rgba(0, 77, 153, 1);
+    --color-linear-right-blue: rgba(30, 144, 255, 1);
     --color-dark-gray: rgb(65 65 65);
     --color-border: #cfcfcf;
-    --color-text-footer: #f1dddd;
 }
 
 * {

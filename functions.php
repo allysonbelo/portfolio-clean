@@ -27,3 +27,5 @@ function abc_dev_config(){
 }
 
 add_action('after_setup_theme', 'abc_dev_config');
+
+add_filter('show_admin_bar', '__return_false');

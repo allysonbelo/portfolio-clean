@@ -4,12 +4,13 @@
 
     --color-back: #000000;
     --color-white: #ffffff;
-    --color-light-gray: #737272;
+    --color-light-gray: #4F4F4F;
     --color-bg-site: #f3f3f3;
     --color-linear-left-blue: rgba(0, 212, 255, 1);
-    --color-linear-right-blue: rgba(30, 144, 255, 1);
+    --color-linear-right-blue: rgba(0, 77, 153, 1);
     --color-dark-gray: rgb(65 65 65);
     --color-border: #cfcfcf;
+    --color-text-footer: #f1dddd;
 }
 
 * {
@@ -55,6 +56,7 @@ h2 {
 
 h3 {
     font-size: 30px;
+    line-height: 18px;
 }
 
 h4 {
@@ -79,18 +81,21 @@ h6 {
 p,
 input,
 textarea {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: clamp(14px, 2.4vw, 16px);
+    line-height: 20px;
     color: var(--color-light-gray);
 }
 
 a {
     font-size: 14px;
     font-weight: 500;
-    /* color: var(--color-white); */
     text-decoration: none;
     letter-spacing: 1.5px;
+    color: var(--color-linear-right-blue);
+}
 
+a:visited{
+    color: var(--color-linear-right-blue);
 }
 
 span {
@@ -112,6 +117,10 @@ span {
 
 .button:hover {
     background-position: right center;
+}
+
+.separator--content{
+    width: 100%;
 }
 
 @media screen and (min-width: 769px) {

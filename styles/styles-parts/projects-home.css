@@ -44,16 +44,19 @@
 .projects__card--content {
     width: 100%;
     background: linear-gradient(to top, black, transparent);
-    padding: 0px 10px 90px 10px;
+    padding: 0px 10px 0px 10px;
     position: absolute;
     bottom: 0;
-    height: 90px;
+    height: 60px;
     transition: height .3s ease-in-out;
 }
 
-.projects__card--content a,
-.projects__card--content p {
+.projects__card--content a{
     color: var(--color-white);
+}
+
+.projects__card--content p{
+    display: none;
 }
 
 .projects__cards ~ .button{
@@ -81,6 +84,8 @@
     }
 
     .projects__card--content p {
+        display: block;
+        color: var(--color-border);
         bottom: -60px;
         position: absolute;
         max-width: 240px;

@@ -17,16 +17,21 @@
             <article class="projects__card--article">
                 <?php
                 if (has_post_thumbnail()) {
-                    the_post_thumbnail("large");
+                    the_post_thumbnail("medium");
                 } else {
                 ?>
-                    <img src="<?php echo get_theme_file_uri('/img/default-image.webp') ?>" alt="">
+                    <img src="<?php echo get_theme_file_uri('/img/default-image.webp') ?>" alt="" loading="lazy">
                 <?php
                 }
                 ?>
                 <div class="projects__card--content">
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
-                    <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <?php if (has_excerpt()) {
+                        echo '<p>' . wp_trim_words(get_the_excerpt(), 8) . '</p>';
+                    } else {
+                        echo '<p>' . wp_trim_words(get_the_content(), 5) . '</p>';
+                    }
+                    ?>
                 </div>
             </article>
 

@@ -15,17 +15,23 @@ function abc_dev_load_scripts()
 
 add_action('wp_enqueue_scripts', 'abc_dev_load_scripts');
 
-function abc_dev_config(){
-    add_theme_support( 'post-thumbnails');
+/**
+ * Configuration for ABC theme.
+ */
+if (function_exists('add_theme_support')) {
+    function abc_dev_config()
+    {
+        add_theme_support('post-thumbnails');
+        add_theme_support('title-tag');
 
-    add_theme_support('custom-logo', array(
-        'height' => 100,
-        'width' => 400,
-        'flex-height' => true,
-        'flex-width' => true
-    ));
+        add_theme_support('custom-logo', array(
+            'height' => 100,
+            'width' => 400,
+            'flex-height' => true,
+            'flex-width' => true,
+        ));
+    }
 }
-
 add_action('after_setup_theme', 'abc_dev_config');
 
 add_filter('show_admin_bar', '__return_false');

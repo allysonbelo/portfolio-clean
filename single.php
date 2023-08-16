@@ -36,7 +36,7 @@
                             $url_repositorio = get_field('url_do_repositorio');
                             $live_preview = get_field('live_preview');
                             ?>
-
+                            
                             <div class="single__aside__content">
                                 <h3>Tecnologias usadas</h3>
                                 <div class="single__aside__content--icons">

@@ -6,21 +6,27 @@
                     the_custom_logo();
                 } else {
                 ?>
-                    <a href="<?php echo home_url('/') ?>">
-                        <h4 class="logo__footer"><?php bloginfo('name') ?></h4>
-                    </a>
+                    <?php if (has_custom_logo()) {
+                        the_custom_logo();
+                    } else {
+                    ?>
+                        <a href="<?php echo home_url('/') ?>">
+                            <h4 class="footer__logo--title"> &lt;/ <?php bloginfo('name') ?> &gt; </h4>
+                        </a>
+                    <?php
+                    } ?>
                 <?php
                 } ?>
             </div>
             <div class="footer__container--other">
                 <h4>Other</h4>
-                <div>
-                    <ul class="other__menu--list">
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                    </ul>
-                </div>
+                <nav>
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'abc_footer_menu',
+                        'depth' => 3,
+                        'menu_class' => 'other__menu--list'
+                    )); ?>
+                </nav>
             </div>
             <div class="footer__container--social">
                 <h4>Find me</h4>

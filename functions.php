@@ -30,8 +30,15 @@ if (function_exists('add_theme_support')) {
             'flex-height' => true,
             'flex-width' => true,
         ));
+
+        register_nav_menus(
+            array(
+                'abc_header_menu' => 'Header Menu',
+                'abc_footer_menu' => 'Footer Menu'
+            )
+        );
     }
 }
-add_action('after_setup_theme', 'abc_dev_config');
+add_action('after_setup_theme', 'abc_dev_config', 0);
 
 add_filter('show_admin_bar', '__return_false');

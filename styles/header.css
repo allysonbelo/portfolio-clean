@@ -18,18 +18,55 @@ header {
     transition: min-height .3s ease;
 }
 
-.logo .logo__header{
+.header__logo .header__logo--title{
     color: var(--color-back);
 }
 
-nav ul {
+.header__menu{
     display: flex;
     gap: 15px;
 }
 
-nav ul li:hover {
-    color: orange;
-    cursor: pointer;
+.header__menu li a{
+    color: var(--color-back);
+    position: relative;
+    transition: color .3s ease-in-out;
+}
+
+.header__menu li:hover a{
+    color: var(--color-linear-right-blue);
+}
+
+.header__menu li a::after{
+    content: '';
+    width: 0%;
+    transition: width .3s ease;
+}
+
+.header__menu li a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    height: 1px;
+    background-color: var(--color-linear-right-blue);
+    display: block;
+    width: 100%;
+    left: 0;
+}
+
+.header__menu .current-menu-item a{
+    color: var(--color-linear-right-blue);
+    height: 0;
+}
+
+.header__menu .current-menu-item a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    left: 0px;
+    background: var(--color-linear-right-blue);
+    height: 1px;
 }
 
 .header-scroll{

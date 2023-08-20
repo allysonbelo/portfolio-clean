@@ -30,6 +30,28 @@
     column-gap: 10px;
 }
 
+.other__menu--list li a{
+    color: var(--color-white);
+    position: relative;
+}
+
+.other__menu--list li a::after{
+    content: '';
+    width: 0%;
+    transition: width .3s ease;
+}
+
+.other__menu--list li a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    height: 2px;
+    background-color: var(--color-white);
+    display: block;
+    width: 100%;
+    left: 0;
+}
+
 .footer__container--social {
     grid-area: social;
     grid-area: social;
@@ -45,7 +67,7 @@
     gap: 20px;
 }
 
-.footer__container--copy p{
+.footer__container--copy p {
     color: var(--color-text-footer);
 }
 
@@ -57,20 +79,14 @@
     /* gap: 20px; */
 }
 
-.footer__container--logo .logo__footer {
+.footer__logo--title {
     color: var(--color-white);
-    font-weight: bold;
-
-    background-image: linear-gradient(to right, var(--color-linear-left-blue) 40%, var(--color-linear-right-blue) 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-
-    transition: scale 0.3s ease;
+    transition: transform .3s ease;
+    transform: scale(1);
 }
 
-.footer__container--logo .logo__footer:hover {
-    scale: 1.2;
+.footer__logo--title:hover {
+    transform: scale(1.1);
 }
 
 .footer__container--logo img {
@@ -123,7 +139,7 @@
         grid-template-areas:
             "logo other social"
             "copy copy copy";
-        grid-template-columns: 100px 1fr 1fr;
+        grid-template-columns: 100px 1fr 112px;
         gap: 40px;
     }
 

@@ -15,25 +15,24 @@
 
         <header id="header">
             <div class="header">
-                <div class="logo">
+                <div class="header__logo">
                     <?php if (has_custom_logo()) {
                         the_custom_logo();
                     } else {
                     ?>
                         <a href="<?php echo home_url('/') ?>">
-                            <h4 class="logo__header"><?php bloginfo('name') ?></h4>
+                            <h4 class="header__logo--title"> &lt;/ <?php bloginfo('name') ?> &gt; </h4>
                         </a>
                     <?php
                     } ?>
                 </div>
 
                 <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Sobre</li>
-                        <li>Projetos</li>
-                        <li>Contato</li>
-                    </ul>
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'abc_header_menu',
+                        'depth' => 2,
+                        'menu_class' => 'header__menu'
+                    )); ?>
                 </nav>
             </div>
         </header>

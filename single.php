@@ -10,7 +10,12 @@
             <div class="single__wrapper--header">
                 <div class="single__header">
                     <h1 class="single__title"><?php the_title(); ?></h1>
-                    <img class="single__header--image" src="<?php echo $post_bg; ?>" alt="" loading="lazy">
+                    <?php if ($post_bg) : ?>
+                        <img class="single__header--image" src="<?php echo $post_bg; ?>" alt="" loading="lazy">
+                    <?php
+                    else: ?>
+                    <img class="single__header--image" src="<?php echo get_theme_file_uri('./img/default-image.webp'); ?>" alt="Espaço escuro com algumas estrelas -  Imagem de capa default para posts" loading="lazy">
+                    <?php endif; ?>
                 </div>
 
             </div>

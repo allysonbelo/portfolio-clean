@@ -31,6 +31,7 @@
     max-width: 400px;
     text-align: center;
     line-height: 30px;
+    margin: 0 auto;
 }
 
 .contact__lottie {
@@ -65,6 +66,11 @@
     color: var(--color-white);
     border: none;
     cursor: pointer;
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1.5px;
 }
 
 @media screen and (min-width: 769px) {
@@ -78,6 +84,7 @@
 
     .contact__content h3 {
         text-align: left;
+        margin: 0;
     }
 
     .contact__lottie {

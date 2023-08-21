@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    position: relative;
 }
 
 #page {
@@ -112,7 +113,7 @@ span {
     height: 40px;
     display: grid;
     place-content: center;
-    transition: all 300ms linear 0s;
+    transition: background-position 300ms linear 0s;
 }
 
 .button:hover {

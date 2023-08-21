@@ -1,8 +1,9 @@
 .main__single {
     margin-top: 80px;
     margin-bottom: 80px;
-    display: grid;
+    display: flex;
     row-gap: 20px;
+    flex-direction: column;
 }
 
 .single__header {
@@ -17,6 +18,7 @@
     background-color: rgb(230, 230, 230);
     flex-direction: column;
     row-gap: 20px;
+    padding: 0 20px;
 }
 
 .single__title {
@@ -278,9 +280,6 @@
 }
 
 @media screen and (max-width: 320px) {
-    .projects__cards~.button {
-        margin-top: 160px;
-    }
 
     .releated__post--card {
         max-width: 290px;

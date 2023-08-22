@@ -41,4 +41,4 @@ if (function_exists('add_theme_support')) {
 }
 add_action('after_setup_theme', 'abc_dev_config', 0);
 
-add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_true'); //Other option : __return_false

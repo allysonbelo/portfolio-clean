@@ -2,17 +2,24 @@
 
 <div id="content">
     <div class="wrapper">
+
         <main>
-            <h1>H1</h1>
-            <h2>H2</h2>
-            <h3>H3</h3>
-            <h4>H4</h4>
-            <h5>H5</h5>
-            <h6>H6</h6>
-            <p>Paragrafo</p>
-            <span>Span</span>
-            <a href="#">Link</a>
+            <?php while (have_posts()) {
+                the_post();
+                // Aqui você pode exibir o título, conteúdo, autor, data etc. da postagem.
+            ?>
+                <h1><?php the_title(); ?></h1>
+            <?php
+                the_content(); // Exibe o conteúdo da postagem
+                the_author(); // Exibe o autor da postagem
+                the_date(); // Exibe a data da postagem
+            } ?>
+
+            <h1></h1>
         </main>
+
+        <?php get_template_part('template-parts/content', 'releated-post') ?>
+        
     </div>
 </div>
 

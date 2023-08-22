@@ -39,7 +39,7 @@
                             'menu_class' => 'header__menu--list'
                         )); ?>
 
-                        <hr style="width: 100%;">
+                        <div class="separator--content"></div>
 
                         <div class="header__social">
                             <!-- Linkedin -->

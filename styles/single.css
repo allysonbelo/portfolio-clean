@@ -215,6 +215,8 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
+        max-height: 74px;
+        overflow: hidden;
     }
 
     .single__aside__content--icons span {

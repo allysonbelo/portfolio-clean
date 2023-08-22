@@ -26,7 +26,12 @@
         <h5>This is me</h5>
         <h1 id="title">Allyson Belo</h1>
         <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-        <a class="button animate__bounceOutRight" href="https://preview.colorlib.com/#ronin" target="_blank">My projects</a>
+
+        <?php
+        $buttonUrl = get_field('banner_button_url');
+        ?>
+
+        <a class="button animate__bounceOutRight" href="<?php echo $buttonUrl['url'] ?>" target="<?php echo $buttonUrl['target'] ?>"><?php echo $buttonUrl['title'] ?></a>
     </div>
     <div class="arrow">
         <a href="#about" aria-label="Link ancora para a seção Sobre">

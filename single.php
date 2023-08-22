@@ -13,8 +13,8 @@
                     <?php if ($post_bg) : ?>
                         <img class="single__header--image" src="<?php echo $post_bg; ?>" alt="" loading="lazy">
                     <?php
-                    else: ?>
-                    <img class="single__header--image" src="<?php echo get_theme_file_uri('./img/default-image.webp'); ?>" alt="Espaço escuro com algumas estrelas -  Imagem de capa default para posts" loading="lazy">
+                    else : ?>
+                        <img class="single__header--image" src="<?php echo get_theme_file_uri('./img/default-image.webp'); ?>" alt="Espaço escuro com algumas estrelas -  Imagem de capa default para posts" loading="lazy">
                     <?php endif; ?>
                 </div>
 
@@ -132,11 +132,15 @@
             </div>
 
             <div id="comments" class="comments-area">
+
                 <?php
+                /* 
                 if (comments_open() || get_comments_number()) {
                     comments_template();
                 }
+                */
                 ?>
+
             </div>
 
 

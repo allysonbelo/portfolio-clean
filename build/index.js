@@ -92,6 +92,10 @@ __webpack_require__.r(__webpack_exports__);
 let aside = document.querySelector('.single__aside');
 let content = document.querySelector('.single__column--left');
 function handleScrollSidebar() {
+  if (!aside || !content) {
+    return; // Um dos elementos não foi encontrado, saia da função
+  }
+
   window.addEventListener('scroll', () => {
     let pageTop = window.scrollY || document.documentElement.scrollTop;
     if (pageTop > 400) {

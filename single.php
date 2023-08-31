@@ -66,7 +66,7 @@
                                 <?php if ($url_repositorio) { ?>
                                     <h3>Repositório</h3>
                                     <div class="single__aside__content--acf">
-                                        <a href="<?php echo $url_repositorio; ?>" target="_blank"><?php echo $url_repositorio ?></a>
+                                        <a href="<?php echo $url_repositorio; ?>" target="_blank"><?php echo custom_trim_url($url_repositorio, 25) ?></a>
                                     </div>
                                 <?php } ?>
 
@@ -76,7 +76,7 @@
                                 <?php if ($live_preview) { ?>
                                     <h3>Live Preview</h3>
                                     <div class="single__aside__content--acf">
-                                        <a href="<?php echo $live_preview; ?>" target="_blank"><?php echo $live_preview ?></a>
+                                        <a href="<?php echo $live_preview; ?>" target="_blank"><?php echo custom_trim_url($live_preview, 25) ?></a>
                                     </div>
                                 <?php } ?>
 
@@ -99,7 +99,6 @@
                 ?>
 
             </div>
-
 
         </main>
     </div>

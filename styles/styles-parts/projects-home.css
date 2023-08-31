@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .projects__card--article {
@@ -31,7 +32,7 @@
 
 .projects__card--article:hover img {
     scale: 1.2;
-    rotate: 5deg;
+    rotate: 3deg;
 }
 
 .projects__card--article:first-child {
@@ -40,6 +41,7 @@
 
 .projects__card--article:last-child {
     flex: 1 1 526.5px;
+    max-width: 526.5px;
 }
 
 .projects__card--content {
@@ -52,15 +54,73 @@
     transition: height .3s ease-in-out;
 }
 
-.projects__card--content a{
+.projects__card--content a {
     color: var(--color-white);
 }
 
-.projects__card--content p{
+.projects__card--content p {
     display: none;
 }
 
-.projects__cards ~ .button{
+.projects__cards~.button {
+    color: var(--color-white);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 5px;
+}
+
+.nav-links .page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    transition: color .6s ease;
+    position: relative;
+    z-index: 2;
+}
+
+
+.nav-links .page-numbers:hover{
+    color: var(--color-white);
+}
+
+.nav-links .page-numbers:hover::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: var(--color-linear-right-blue);
+    height: 0;
+    z-index: -1;
+    animation: crescer .3s forwards;
+}
+
+@keyframes crescer {
+    0%{
+        height: 0;
+        width: 0;
+    }
+
+    100%{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+span.page-numbers.current {
+    font-size: 1.1rem;
+    background-color: var(--color-linear-right-blue);
     color: var(--color-white);
 }
 
@@ -75,7 +135,7 @@
         transition: bottom .3s ease-in-out, color .3s ease-in-out;
     }
 
-    .projects__card--article a:hover{
+    .projects__card--article a:hover {
         color: var(--color-linear-right-blue);
     }
 
@@ -89,7 +149,10 @@
         color: var(--color-border);
         bottom: -60px;
         position: absolute;
-        max-width: 240px;
+        max-width: 500px;
+        padding-right: 10px;
+        width: 100%;
+        word-wrap: break-word;
         transition: bottom .3s ease-in-out;
     }
 
@@ -99,7 +162,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    .projects__card--article{
+    .projects__card--article {
         max-width: 290px;
     }
 }

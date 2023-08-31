@@ -12,7 +12,7 @@ function handleScrollSidebar() {
 
     if (pageTop > 400) {
       aside.style.position = 'fixed';
-      aside.style.top = '130px';
+      aside.style.top = '150px';
       aside.style.bottom = '';
 
       if (pageTop >= content.offsetHeight + 50) {

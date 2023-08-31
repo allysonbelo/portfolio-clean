@@ -193,34 +193,3 @@
         text-align: left;
     }
 }
-
-.single__header{
-    position: absolute;
-    min-height: clamp(25vh, 23vw, 35vh);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: rgb(230, 230, 230);
-    flex-direction: column;
-    row-gap: 20px;
-    padding: 0 20px;
-    overflow: hidden;
-}
-
-.single__header--image{
-    scale: 1.5;
-    animation: crescer 30s forwards;
-}
-
-@keyframes crescer {
-    0%{
-        scale: 1.5;
-    }
-
-    100%{
-        scale: 1;
-    }
-}

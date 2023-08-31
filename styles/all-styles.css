@@ -4,6 +4,7 @@
 @import url('front-page.css');
 @import url('footer.css');
 @import url('single.css');
+@import url('404.css');
 
 /* Parts  */
 @import url('styles-parts/banner.css');

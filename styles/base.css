@@ -114,6 +114,7 @@ span {
     display: grid;
     place-content: center;
     transition: background-position 300ms linear 0s;
+    width: 100%;
 }
 
 .button:hover {

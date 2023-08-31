@@ -63,3 +63,9 @@ function custom_trim_url($url, $limit) {
         return $url . '...';
     }
 }
+
+// Adiciona bibioteca do lottiesfiles
+function lottie_file_script(){
+    echo '<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>';
+}
+add_action('wp_head', "lottie_file_script");

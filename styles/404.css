@@ -1,0 +1,22 @@
+.main__404 {
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.main__404__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main__404--title{
+    text-align: center;
+    font-size: 48px;
+    max-width: 650px;
+}
+
+.main__404__container .button{
+    color: var(--color-white);
+}

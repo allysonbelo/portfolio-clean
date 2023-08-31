@@ -18,7 +18,6 @@
             $lottie_hover = get_field('lottie_hover');
             ?>
 
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="<?php echo $lottie_url ?>" background="<?php echo $lottie_bg_color ?>" speed="<?php echo $lottie_speed ?>" style="width: 300px; height: 300px" <?php echo ($lottie_loop == 'true') ? 'loop' : ''; ?> <?php echo ($lottie_autoplay == 'true') ? 'autoplay' : ''; ?> direction="<?php echo $lottie_direction ?>">
             </lottie-player>
         </div>

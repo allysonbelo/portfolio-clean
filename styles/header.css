@@ -30,7 +30,7 @@ header {
     position: relative;
 }
 
-button {
+.header__nav--buton {
     border: none;
     background: none;
     padding: 0;
@@ -73,7 +73,7 @@ button {
 }
 
 .header__nav--buton:hover span {
-    width: .25rem;
+    width: .5rem;
     transform: translateX(10px);
     background-color: var(--color-linear-right-blue);
 }

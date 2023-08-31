@@ -37,8 +37,29 @@ if (function_exists('add_theme_support')) {
                 'abc_footer_menu' => 'Footer Menu'
             )
         );
+
+        $args  = array(
+            'height'    => 303,
+            'width'     => 1920
+        );
+        add_theme_support( 'custom-header', $args );
     }
 }
 add_action('after_setup_theme', 'abc_dev_config', 0);
 
-add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_true'); //Other option : __return_false
+
+//limitando a quantidade de caracteres em uma palavra
+function custom_trim_url($url, $limit) {
+    if (strlen($url) <= $limit) {
+        return $url;
+    } else {
+        // Remove protocol and www. to account for shorter URLs
+        $url = preg_replace('#^https?://(?:www\.)?#i', '', $url);
+
+        // Trim the URL to the desired length
+        $url = substr($url, 0, $limit);
+
+        return $url . '...';
+    }
+}

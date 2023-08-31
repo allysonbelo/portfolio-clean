@@ -10,3 +10,6 @@
 @import url('styles-parts/about.css');
 @import url('styles-parts/projects-home.css');
 @import url('styles-parts/contact.css');
+
+/* Templates */
+@import url('templates/blog-list.css');

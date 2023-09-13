@@ -8,7 +8,7 @@
     --color-bg-site: #f3f3f3;
     --color-linear-left-blue: rgba(0, 212, 255, 1);
     --color-linear-right-blue: rgba(0, 77, 153, 1);
-    --color-dark-gray: rgb(65 65 65);
+    --color-dark-gray: rgb(34 31 47);
     --color-border: #cfcfcf;
     --color-text-footer: #f1dddd;
 }
@@ -123,6 +123,7 @@ span {
 
 .separator--content{
     width: 100%;
+    margin: 40px 0px;
 }
 
 @media screen and (min-width: 769px) {

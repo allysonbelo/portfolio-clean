@@ -2,6 +2,44 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/modules/dark-mode.js":
+/*!**********************************!*\
+  !*** ./src/modules/dark-mode.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function changeMode() {
+  const iconLight = document.querySelector('.fa-regular');
+  const page = document.querySelector('#page');
+  iconLight.addEventListener('click', () => {
+    page.classList.toggle('dark-mode');
+  });
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    page.classList.add('dark-mode');
+  } else {
+    page.classList.remove('dark-mode');
+  }
+  iconLight.addEventListener('click', () => {
+    const light__lines = document.querySelectorAll('.light__line');
+    light__lines.forEach(light__line => {
+      // Adiciona a classe com a animação
+      light__line.classList.add('animate__light');
+
+      //  Remove a classe após 1 segundo (1000 milissegundos)
+      setTimeout(() => {
+        light__line.classList.remove('animate__light');
+      }, 1000);
+    });
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (changeMode);
+
+/***/ }),
+
 /***/ "./src/modules/front-page.js":
 /*!***********************************!*\
   !*** ./src/modules/front-page.js ***!
@@ -183,7 +221,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_front_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/front-page */ "./src/modules/front-page.js");
 /* harmony import */ var _modules_sidebar_post_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sidebar-post-control */ "./src/modules/sidebar-post-control.js");
 /* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/menu */ "./src/modules/menu.js");
+/* harmony import */ var _modules_dark_mode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/dark-mode */ "./src/modules/dark-mode.js");
 // Import files 
+
 
 
 
@@ -194,6 +234,7 @@ __webpack_require__.r(__webpack_exports__);
 (0,_modules_front_page__WEBPACK_IMPORTED_MODULE_1__["default"])();
 (0,_modules_sidebar_post_control__WEBPACK_IMPORTED_MODULE_2__["default"])();
 (0,_modules_menu__WEBPACK_IMPORTED_MODULE_3__["default"])();
+(0,_modules_dark_mode__WEBPACK_IMPORTED_MODULE_4__["default"])();
 })();
 
 /******/ })()

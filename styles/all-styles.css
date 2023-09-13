@@ -5,6 +5,7 @@
 @import url('footer.css');
 @import url('single.css');
 @import url('404.css');
+@import url('dark-mode.css');
 
 /* Parts  */
 @import url('styles-parts/banner.css');

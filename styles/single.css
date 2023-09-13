@@ -55,6 +55,10 @@
     display: block;
 }
 
+.single__content--breadcrumbs span{
+    text-decoration: underline;
+}
+
 .single__content--position {
     display: grid;
     gap: 30px;
@@ -77,9 +81,8 @@
 /* Releated Posts  */
 .releated__posts {
     display: grid;
-    row-gap: 20px;
+    row-gap: 35px;
     margin-bottom: 60px;
-    background-color: var(--color-bg-site);
     position: relative;
     z-index: 3;
 }

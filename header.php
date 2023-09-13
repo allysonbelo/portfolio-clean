@@ -11,7 +11,9 @@
 
 <body <?php body_class(); ?>>
 
-    <div id="page">
+    <?php $site_color = get_theme_mod('set_site_color'); ?>
+
+    <div id="page" style="background-color: <?php echo $site_color ?>;">
 
         <header id="header">
             <div class="header">
@@ -26,6 +28,19 @@
                     <?php
                     } ?>
                 </div>
+
+                <div class="header__dark__mod">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <div id="lightGroup" class="light__group">
+                        <span class="light__line"></span>
+                        <span class="light__line"></span>
+                        <span class="light__line"></span>
+                        <span class="light__line"></span>
+                        <span class="light__line"></span>
+                    </div>
+
+                </div>
+
                 <nav class="header__nav">
                     <button class="header__nav--buton" aria-label="Button dropdown">
                         <span class="header__button--line1"></span>

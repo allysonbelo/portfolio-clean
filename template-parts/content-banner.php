@@ -1,3 +1,5 @@
+<?php include get_template_directory() . '/inc/acf_variables.php'; ?>
+
 <div class="banner">
     <div class="banner__image">
         <!-- <img src="<?php echo get_theme_file_uri('/img/profile-removebg-preview.png') ?>" alt=""> -->
@@ -23,9 +25,10 @@
         </div>
     </div>
     <div class="banner__content">
-        <h5>This is me</h5>
-        <h1 id="title">Allyson Belo</h1>
-        <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
+
+        <h5><?php echo $sub_title ?></h5>
+        <h1 id="title"><?php echo $main_title_banner ?? 'teste2' ?></h1>
+        <p><?php echo $banner_text_area ?></p>
 
         <?php
         $buttonUrl = get_field('banner_button_url');

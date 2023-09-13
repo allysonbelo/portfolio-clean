@@ -22,7 +22,7 @@
 
             <div class="single__content">
                 <div class="single__content--breadcrumbs">
-                    <a href="<?php echo home_url('/'); ?>">Home</a>
+                    <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name')?></a>
                     <i class="fas fa-arrow-right"></i>
                     <a href="<?php echo home_url('/projects'); ?>">Projects</a>
                     <i class="fas fa-arrow-right"></i>

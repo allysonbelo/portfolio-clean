@@ -1,0 +1,134 @@
+.dark-mode {
+    background-color: #272433 !important;
+}
+
+.header__dark__mod {
+    margin-left: auto;
+    margin-right: 30px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-regular {
+    position: absolute;
+    transform: rotate(180deg);
+    font-size: 1.6rem;
+    z-index: 1;
+    color: #ffd819;
+    transition: color .3s ease;
+}
+
+.dark-mode .fa-regular {
+    color: #161515f0;
+}
+
+.fa-regular:hover {
+    cursor: pointer;
+}
+
+.dark-mode .light__group {
+    display: none;
+}
+
+.light__group {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.light__line {
+    display: block;
+    width: 4px;
+    height: 2px;
+    transform: rotate(90deg);
+    position: absolute;
+
+}
+
+.light__line:nth-child(1) {
+    background-color: #ffd819;
+    bottom: 5px;
+    left: 23px;
+}
+
+.light__line:nth-child(2) {
+    background-color: #ffd819;
+    bottom: 9px;
+    left: 34px;
+    rotate: 332deg;
+}
+
+.light__line:nth-child(3) {
+    background-color: #ffd819;
+    bottom: 8px;
+    left: 12px;
+    rotate: 27deg;
+}
+
+.light__line:nth-child(4) {
+    background-color: #ffd819;
+    bottom: 18px;
+    left: 6px;
+    rotate: 54deg;
+}
+
+.light__line:nth-child(5) {
+    background-color: #ffd819;
+    bottom: 19px;
+    left: 38px;
+    rotate: 294deg;
+    opacity: 1;
+}
+
+.animate__light {
+    animation: piscar .2s infinite forwards;
+}
+
+@keyframes piscar {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ffd819;
+    }
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h5 {
+    color: var(--color-white);
+}
+
+.dark-mode p,
+.dark-mode span {
+    color: #B1B2B4;
+}
+
+.dark-mode .arrow_one path,
+.dark-mode .arrow_two path,
+.dark-mode .arrow_three path {
+    fill: var(--color-white);
+}
+
+.dark-mode i {
+    color: var(--color-white);
+}
+
+.dark-mode .page-numbers {
+    color: var(--color-white);
+}
+
+.dark-mode .single__aside,
+.dark-mode .releated__posts {
+    background-color: transparent;
+}
+
+.dark-mode .single__aside__content--acf a, .dark-mode .single__content--breadcrumbs a {
+    color: var(--color-white);
+}

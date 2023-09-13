@@ -57,7 +57,7 @@
 
         </div>
         <div class="footer__container--copy">
-            <p>Copyright ©2023 All rights reserved | This template is made with by Allyson Belo Cavalcante</p>
+            <p><?php echo get_theme_mod('set_copyright') ?></p>
         </div>
     </div>
 

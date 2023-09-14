@@ -112,7 +112,7 @@ header {
 }
 
 .header__menu li:hover a {
-    color: var(--color-linear-left-blue);
+    color: var(--color-dark-gray);;
 }
 
 .header__menu li a::after {
@@ -125,7 +125,7 @@ header {
     content: '';
     position: absolute;
     height: 1px;
-    background-color: var(--color-linear-left-blue);
+    background-color: var(--color-dark-gray);;
     display: block;
     width: 100%;
     right: 0;
@@ -162,12 +162,11 @@ header {
     position: relative;
 }
 
-.header__social svg,
-.header__social span {
+.header__social i {
     transition: transform .3s ease;
 }
 
-.header__social span {
+.header__social i {
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -175,14 +174,11 @@ header {
     left: -3px;
 }
 
-.header__social svg path,
-.header__social span {
-    fill: var(--color-white);
+.header__social i {
     color: var(--color-white);
 }
 
-.header__social a:hover svg,
-.header__social a:hover span {
+.header__social a:hover i {
     transform: translate(-3px);
 }
 

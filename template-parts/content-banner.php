@@ -2,12 +2,12 @@
 
 <div class="banner">
     <div class="banner__image">
-        <!-- <img src="<?php echo get_theme_file_uri('/img/profile-removebg-preview.png') ?>" alt=""> -->
         <div class="blob">
             <div class="blob-container">
                 <div class="blob__body">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style="opacity: 1;" filter="blur(0px)" transform="rotate(0)">
-                        <image x="0" y="0" width="100%" height="100%" clip-path="url(#shape)" href="<?php echo get_theme_file_uri('/img/allyson.webp') ?>" preserveAspectRatio="none"></image>
+                        <image x="0" y="0" width="100%" height="100%" clip-path="url(#shape)" href="<?php echo $banner_image ?>" preserveAspectRatio="none"></image>
+                        <?php var_dump($banner_image ) ?>
                         <defs>
                             <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                                 <stop offset="0%" style="stop-color: rgb(240, 0, 60);"></stop>
@@ -29,11 +29,6 @@
         <h5><?php echo $sub_title ?></h5>
         <h1 id="title"><?php echo $main_title_banner ?? 'teste2' ?></h1>
         <p><?php echo $banner_text_area ?></p>
-
-        <?php
-        $buttonUrl = get_field('banner_button_url');
-        ?>
-
         <a class="button animate__bounceOutRight" href="<?php echo $buttonUrl['url'] ?>" target="<?php echo $buttonUrl['target'] ?>"><?php echo $buttonUrl['title'] ?></a>
     </div>
     <div class="arrow">

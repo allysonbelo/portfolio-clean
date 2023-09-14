@@ -1,4 +1,6 @@
-<h2 class="projects__title">My Projects</h2>
+<?php include get_template_directory() . '/inc/acf_variables.php'; ?>
+
+<h2 class="projects__title"><?php echo esc_html($title_projects) ?></h2>
 
 <div class="projects__cards">
     <?php
@@ -53,8 +55,12 @@ $args = array(
 $query = new WP_Query($args);
 $total_posts = $query->found_posts;
 
-if ($total_posts > $show_posts_number) {
-    echo '<a class="button" href="https://preview.colorlib.com/#ronin" target="_blank">Show all projects</a>';
+if ($total_posts > $show_posts_number && $projects_button) {
+    echo sprintf(
+        '<a class="button animate__bounceOutRight" href="%s" target="%s">%s</a>',
+        $projects_button['url'],
+        $projects_button['target'],
+        $projects_button['title']
+    );
 }
-
 ?>

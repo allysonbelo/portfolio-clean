@@ -19,7 +19,7 @@
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 22px;
 }
 
 .footer__container--other {
@@ -138,12 +138,11 @@
     position: relative;
 }
 
-.footer__social svg,
-.footer__social span {
+.footer__social i {
     transition: transform .3s ease;
 }
 
-.footer__social span {
+.footer__social i {
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -151,14 +150,11 @@
     left: -3px;
 }
 
-.footer__social svg path,
-.footer__social span {
-    fill: var(--color-white);
+.footer__social i {
     color: var(--color-white);
 }
 
-.footer__social a:hover svg,
-.footer__social a:hover span {
+.footer__social a:hover i {
     transform: translate(-3px);
 }
 

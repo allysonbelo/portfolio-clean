@@ -44,15 +44,20 @@ if (function_exists('add_theme_support')) {
             'height'    => 303,
             'width'     => 1920
         );
-        add_theme_support( 'custom-header', $args );
+        add_theme_support('custom-header', $args);
+
+        add_theme_support('automatic-feed-links');
+
+        add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'));
     }
 }
 add_action('after_setup_theme', 'abc_dev_config', 0);
 
-add_filter('show_admin_bar', '__return_false'); //Other option : __return_false
+add_filter('show_admin_bar', '__return_true'); //Other option : __return_false
 
 //limitando a quantidade de caracteres em uma palavra
-function custom_trim_url($url, $limit) {
+function custom_trim_url($url, $limit)
+{
     if (strlen($url) <= $limit) {
         return $url;
     } else {
@@ -67,7 +72,30 @@ function custom_trim_url($url, $limit) {
 }
 
 // Adiciona bibioteca do lottiesfiles
-function lottie_file_script(){
+function lottie_file_script()
+{
     echo '<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>';
 }
 add_action('wp_head', "lottie_file_script");
+
+function add_google_analytics()
+{
+?>
+    <!-- Início do código de rastreamento do Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMCL9RD6WX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SMCL9RD6WX');
+    </script>
+    <!-- Fim do código de rastreamento do Google Analytics -->
+<?php
+}
+
+add_action('wp_head', 'add_google_analytics');

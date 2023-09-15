@@ -9,7 +9,6 @@ get_header();
 ?>
 
 <div class="wrapper" style="padding-top: 120px; padding-bottom: 120px;">
-    <h2><?php echo get_the_title(); ?></h2>
 
     <?php
     if (have_posts()) :

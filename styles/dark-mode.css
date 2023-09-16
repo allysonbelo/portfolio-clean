@@ -105,6 +105,10 @@
     color: var(--color-white);
 }
 
+.dark-mode a{
+    color: var(--color-white);
+}
+
 .dark-mode p,
 .dark-mode span {
     color: #B1B2B4;

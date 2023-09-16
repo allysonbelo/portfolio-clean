@@ -53,11 +53,12 @@ h2 {
     font-size: clamp(28px, 4vw, 38px);
     font-weight: bold;
     text-align: center;
+    margin: 20px 0;
 }
 
 h3 {
-    font-size: 30px;
-    line-height: 18px;
+    font-size: clamp(20px, 4vw, 25px);
+    line-height: 30px;
 }
 
 h4 {

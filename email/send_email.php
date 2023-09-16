@@ -46,7 +46,7 @@ $arquivo = "
 
   ";
 
-$to = 'allysonbelo@gmail.com';
+$to = 'contato@allysonbelo.com';
 $replyTo = "$name <$email>";
 $subject = 'Novo contato do site';
 

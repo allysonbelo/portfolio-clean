@@ -30,7 +30,7 @@
                         <article class="projects__card--article">
                             <?php
                             if (has_post_thumbnail()) {
-                                the_post_thumbnail("medium");
+                                the_post_thumbnail("large");
                             } else {
                             ?>
                                 <img src="<?php echo get_theme_file_uri('/img/default-image.webp') ?>" alt="" loading="lazy">

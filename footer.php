@@ -44,7 +44,7 @@
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <!-- E-mail -->
-                <a href="mailto: allysonbelo@gmail.com" aria-label="Link para entrar em contato por e-mail com Allyson Cavalcante">
+                <a href="mailto: contato@allysonbelo.com" aria-label="Link para entrar em contato por e-mail com Allyson Cavalcante">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>

@@ -29,7 +29,6 @@ header {
 
 .header__nav {
     position: relative;
-    overflow: hidden;
 }
 
 .header__nav--buton {
@@ -93,10 +92,14 @@ header {
     transition: right .8s cubic-bezier(0.18, 0.89, 0.45, 1.07);
     border-radius: 8px;
     background: linear-gradient(to left, var(--color-linear-right-blue) 8%, var(--color-linear-left-blue) 100%);
+    visibility: hidden;
+    display: none;
 }
 
 .header__menu.toggle {
     right: 0px;
+    visibility: visible;
+    display: block;
 }
 
 .header__menu--list{

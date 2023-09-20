@@ -1,7 +1,6 @@
 :root {
     --font-heebo: 'Heebo', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
-
     --color-back: #000000;
     --color-white: #ffffff;
     --color-light-gray: #4F4F4F;
@@ -31,7 +30,6 @@ html {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
-    overflow: hidden;
     width: 100%;
 }
 

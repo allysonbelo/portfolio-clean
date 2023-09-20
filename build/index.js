@@ -82,6 +82,20 @@ function showMenu() {
   menuButton.addEventListener('click', function () {
     menuNav.classList.toggle('toggle');
   });
+
+  // menuButton.addEventListener('click', function () {
+  //   let condition = true;
+  //   if (condition) {
+  //     setInterval(function () {
+  //       menuButton.classList.add('toggle');
+  //     }, 1000); // Executes every 1 second
+  //   } else {
+  //     setInterval(function () {
+  //       menuButton.classList.remove('toggle');
+  //     }, 1000); // Executes every 1 second
+  //   }
+  // });
+
   let coverPage = document.querySelector('.cover__menu');
   menuButton.addEventListener('click', () => {
     coverPage.classList.toggle('cover__menu--active');

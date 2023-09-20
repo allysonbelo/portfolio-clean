@@ -29,6 +29,7 @@ header {
 
 .header__nav {
     position: relative;
+    overflow: hidden;
 }
 
 .header__nav--buton {

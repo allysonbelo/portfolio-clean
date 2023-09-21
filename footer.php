@@ -11,7 +11,7 @@
                 } else {
                 ?>
                     <a href="<?php echo home_url('/') ?>">
-                        <h4 class="footer__logo--title"> &lt;/ <?php bloginfo('name') ?> &gt; </h4>
+                        <span class="footer__logo--title"> &lt;/ <?php bloginfo('name') ?> &gt; </span>
                     </a>
                 <?php
                 } ?>
@@ -32,7 +32,7 @@
             </nav>
         </div>
         <div class="footer__container--social">
-            <h4>Find me</h4>
+            <span>Find me</span>
 
             <div class="footer__social">
                 <!-- Linkedin -->

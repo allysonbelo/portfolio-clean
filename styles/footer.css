@@ -55,8 +55,9 @@
     column-gap: 10px;
 }
 
-.footer__title--menu h4, .footer__container--social h4{
+.footer__title--menu span, .footer__container--social span{
     font-size: 18px;
+    color: var(--color-white) !important;
 }
 
 .other__menu--list li a{
@@ -108,9 +109,10 @@
 }
 
 .footer__logo--title {
-    color: var(--color-white);
+    color: var(--color-white) !important;
     transition: transform .3s ease;
     transform: scale(1);
+    font-size: 21px;
 }
 
 .footer__logo--title:hover {

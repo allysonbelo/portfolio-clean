@@ -6,6 +6,7 @@
         "conteudo"
         "arrow";
     align-items: center;
+    position: relative;
 }
 
 .banner__image {
@@ -31,7 +32,6 @@
     display: grid;
     row-gap: 20px;
     overflow: hidden;
-    /* width: clamp(300px, 48vw, 426px); */
 }
 
 .banner__content h1 {
@@ -47,6 +47,9 @@
     grid-area: arrow;
     position: relative;
     margin-top: 40px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
 }
 
 .arrow_one,
@@ -57,35 +60,22 @@
     transform: translate(-50%);
 }
 
-.arrow_one{
+.arrow_one {
     top: -10px;
     width: 30px;
-    opacity: 0;
     animation: showImage 2s infinite 2s;
 }
 
-.arrow_two{
+.arrow_two {
     top: 0px;
     width: 50px;
-    opacity: 0;
     animation: showImage 2s infinite 2.1s;
 }
 
-.arrow_three{
+.arrow_three {
     top: 10px;
     width: 70px;
-    opacity: 0;
     animation: showImage 2s infinite 2.2s;
-}
-
-@keyframes showTitle {
-    0% {
-        margin-left: -9999px;
-    }
-
-    100% {
-        margin-left: 0px;
-    }
 }
 
 @keyframes showImage {
@@ -99,21 +89,6 @@
 }
 
 @media screen and (min-width: 769px) {
-    .banner__content h5,
-    .banner__content h1,
-    .banner__content p,
-    .banner__content a {
-        margin-left: -9999px;
-    }
-    
-    .banner__image {
-        opacity: 0;
-    }
-    
-    .banner__image {
-        animation: showImage 3s forwards;
-    }
-
     .banner {
         margin-top: 80px;
         grid-template-areas:
@@ -125,44 +100,8 @@
         justify-content: center;
     }
 
-    .show__element .banner__content h5 {
-        animation: showTitle 1s forwards;
-    }
-
-    .show__element .banner__content h1 {
-        animation: showTitle 2s forwards;
-    }
-
-    .show__element .banner__content p {
-        height: 52px;
-        max-width: 500px;
-        animation: showTitle 3s forwards;
-    }
-
-    .show__element .banner__content a {
+    .arrow {
         margin-top: 0px;
-        animation: showTitle 4s forwards;
     }
 
-    .arrow_one{
-        top: -100px;
-        width: 40px;
-        opacity: 0;
-        animation: showImage 2s infinite 5s;
-    }
-    
-    .arrow_two{
-        top: -90px;
-        width: 60px;
-        opacity: 0;
-        animation: showImage 2s infinite 5.1s;
-    }
-    
-    .arrow_three{
-        top: -80px;
-        width: 80px;
-        opacity: 0;
-        animation: showImage 2s infinite 5.2s;
-    }
-    
 }

@@ -74,7 +74,7 @@
                             <div class="single__aside__content">
 
                                 <?php if ($live_preview) { ?>
-                                    <h3>Live Preview</h3>
+                                    <h3>Visualizar Site</h3>
                                     <div class="single__aside__content--acf">
                                         <a href="<?php echo $live_preview; ?>" target="_blank"><?php echo custom_trim_url($live_preview, 25) ?></a>
                                     </div>

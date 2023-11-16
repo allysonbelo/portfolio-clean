@@ -32,7 +32,7 @@
             </nav>
         </div>
         <div class="footer__container--social">
-            <span>Find me</span>
+            <span>Onde Estou?</span>
 
             <div class="footer__social">
                 <!-- Linkedin -->

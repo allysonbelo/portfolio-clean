@@ -18,7 +18,7 @@
     // Verifica se existem posts relacionados
     if ($related_posts->have_posts()) : ?>
         <hr class="separator--content">
-        <h3>Other Projects</h3>
+        <h3>Outros Projetos</h3>
         <div class="releated__cards">
             <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
 

@@ -24,7 +24,7 @@
                 <div class="single__content--breadcrumbs">
                     <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name')?></a>
                     <i class="fas fa-arrow-right"></i>
-                    <a href="<?php echo home_url('/projects'); ?>">Projects</a>
+                    <a href="<?php echo home_url('/projetos'); ?>">Projetos</a>
                     <i class="fas fa-arrow-right"></i>
                     <span><?php the_title(); ?></span>
                 </div>

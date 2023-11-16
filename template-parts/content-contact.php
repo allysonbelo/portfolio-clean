@@ -15,75 +15,78 @@
     <!-- Parte 2: Formulário de Contato -->
     <section id="contact__wrapper--right">
         <div class="contact__container">
-            <form action="<?php echo get_template_directory_uri() . '/email/send_email.php'; ?>" method="POST" onsubmit="return validateForm()">
-            
+            <!-- <form action="<?php echo get_template_directory_uri() . '/email/send_email.php'; ?>" method="POST" onsubmit="return validateForm()">
+
                 <input type="text" id="name" name="name" placeholder="Name">
                 <span id="nameError" class="error-message"></span>
-            
+
                 <input type="email" id="email" name="email" placeholder="E-mail">
                 <span id="emailError" class="error-message"></span>
-            
+
                 <input type="text" id="subject" name="subject" placeholder="Subject">
                 <span id="subjectError" class="error-message"></span>
-            
+
                 <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
                 <span id="messageError" class="error-message"></span>
-            
+
                 <button type="submit" class="button"><?php echo esc_html($text_contact_button); ?></button>
-            
+
             </form>
-            
+
             <script>
                 function validateForm() {
                     var name = document.getElementById("name").value;
                     var email = document.getElementById("email").value;
                     var subject = document.getElementById("subject").value;
                     var message = document.getElementById("message").value;
-            
+
                     var nameError = document.getElementById("nameError");
                     var emailError = document.getElementById("emailError");
                     var subjectError = document.getElementById("subjectError");
                     var messageError = document.getElementById("messageError");
-            
+
                     nameError.textContent = "";
                     emailError.textContent = "";
                     subjectError.textContent = "";
                     messageError.textContent = "";
-            
+
                     if (name === "") {
                         nameError.textContent = "Please enter your name";
                         return false;
                     }
-            
+
                     if (!validateEmail(email)) {
                         emailError.textContent = "Please enter a valid email";
                         return false;
                     }
-            
+
                     if (subject === "") {
                         subjectError.textContent = "Please enter a subject";
                         return false;
                     }
-            
+
                     if (message === "") {
                         messageError.textContent = "Please enter a message";
                         return false;
                     }
                 }
-            
+
                 function validateEmail(email) {
                     var re = /\S+@\S+\.\S+/;
                     return re.test(email);
                 }
             </script>
-            
+
             <style>
                 .error-message {
                     color: #fb9e9e !important;
                 }
-            </style>
-            
+            </style> -->
 
+            <?php
+            // Adicione o formulário WPForms usando o shortcode
+            echo do_shortcode('[wpforms id="579" title="false"]');
+            ?>
 
         </div>
     </section>

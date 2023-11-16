@@ -91,3 +91,15 @@
         justify-content: left;
     }
 }
+
+/* Plugin wpforms */
+
+.contact__container .wpforms__abc{
+    font-family: var(--font-heebo);
+}
+
+.contact__container .wpforms__abc .wpforms-field-sublabel{
+    display: none;
+}
+
+/* Plugin wpforms */

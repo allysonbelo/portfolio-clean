@@ -85,7 +85,7 @@
 
             <?php
             // Adicione o formulário WPForms usando o shortcode
-            echo do_shortcode('[wpforms id="579" title="false"]');
+            echo do_shortcode('[wpforms id="200" title="false"]');
             ?>
 
         </div>

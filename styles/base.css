@@ -7,9 +7,9 @@
     --color-bg-site: #f3f3f3;
     --color-linear-left-blue: #00d4ff;
     --color-linear-right-blue: #004d99;
-    --color-dark-gray: rgb(34 31 47);
+    --color-dark-gray: #221f2f;
     --color-border: #cfcfcf;
-    --color-text-footer: #f1dddd;
+    --color-text-footer: #e9e9e9;
 }
 
 * {

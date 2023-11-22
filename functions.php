@@ -74,7 +74,7 @@ function custom_trim_url($url, $limit)
 // Adiciona bibioteca do lottiesfiles
 function lottie_file_script()
 {
-    echo '<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>';
+    echo '<script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>';
 }
 add_action('wp_head', "lottie_file_script");
 
@@ -83,7 +83,7 @@ function add_google_analytics()
 ?>
     <!-- Início do código de rastreamento do Google Analytics -->
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMCL9RD6WX"></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SMCL9RD6WX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -103,7 +103,7 @@ add_action('wp_head', 'add_google_analytics');
 function add_microsoft_clarity()
 {
 ?>
-    <script type="text/javascript">
+    <script defer type="text/javascript">
         (function(c, l, a, r, i, t, y) {
             c[a] = c[a] || function() {
                 (c[a].q = c[a].q || []).push(arguments)
@@ -119,3 +119,12 @@ function add_microsoft_clarity()
 }
 
 add_action('wp_head', 'add_microsoft_clarity');
+
+function add_font_awesome()
+{
+?>
+    <script src="https://kit.fontawesome.com/81cf49532b.js" crossorigin="anonymous"></script>
+<?php
+}
+
+add_action('wp_head', 'add_font_awesome');

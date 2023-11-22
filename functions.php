@@ -123,7 +123,7 @@ add_action('wp_head', 'add_microsoft_clarity');
 function add_font_awesome()
 {
 ?>
-    <script src="https://kit.fontawesome.com/81cf49532b.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/81cf49532b.js" crossorigin="anonymous"></script>
 <?php
 }
 

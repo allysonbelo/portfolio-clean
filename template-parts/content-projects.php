@@ -57,7 +57,7 @@ $total_posts = $query->found_posts;
 
 if ($total_posts > $show_posts_number && $projects_button) {
     echo sprintf(
-        '<a class="button animate__bounceOutRight" href="%s" target="%s">%s</a>',
+        '<a id="button__projetos" class="button animate__bounceOutRight" href="%s" target="%s">%s</a>',
         $projects_button['url'],
         $projects_button['target'],
         $projects_button['title']

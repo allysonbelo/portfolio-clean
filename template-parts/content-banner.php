@@ -29,7 +29,7 @@
         <h5><?php echo $sub_title ?></h5>
         <h1 id="title"><?php echo $main_title_banner ?? 'teste2' ?></h1>
         <p><?php echo $banner_text_area ?></p>
-        <a class="button animate__bounceOutRight" href="<?php echo $buttonUrl['url'] ?>" target="<?php echo $buttonUrl['target'] ?>"><?php echo $buttonUrl['title'] ?></a>
+        <a id="button__frontpage" class="button animate__bounceOutRight" href="<?php echo $buttonUrl['url'] ?>" target="<?php echo $buttonUrl['target'] ?>"><?php echo $buttonUrl['title'] ?></a>
     </div>
     <div class="arrow">
         <a href="#about" aria-label="Link ancora para a seção Sobre">

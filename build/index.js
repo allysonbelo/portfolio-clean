@@ -111,6 +111,42 @@ function showMenu() {
 
 /***/ }),
 
+/***/ "./src/modules/rastreamento.js":
+/*!*************************************!*\
+  !*** ./src/modules/rastreamento.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function rastreamento() {
+  document.addEventListener('DOMContentLoaded', function () {
+    const botaoBanner = document.getElementById('button__frontpage');
+    if (botaoBanner) {
+      botaoBanner.addEventListener('click', function () {
+        gtag('event', 'clique_no_botao', {
+          'event_category': 'CategoriaLink2',
+          'eventlabel': 'BotaoBanner'
+        });
+      });
+    }
+    const botaoProjetos = document.getElementById('button__projetos');
+    if (botaoProjetos) {
+      botaoProjetos.addEventListener('click', function () {
+        gtag('event', 'clique_no_botao', {
+          'event_category': 'CategoriaLink2',
+          'eventlabel': 'BotaoProjetos'
+        });
+      });
+    }
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (rastreamento);
+
+/***/ }),
+
 /***/ "./src/modules/show-element.js":
 /*!*************************************!*\
   !*** ./src/modules/show-element.js ***!
@@ -198,7 +234,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_front_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/front-page */ "./src/modules/front-page.js");
 /* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu */ "./src/modules/menu.js");
 /* harmony import */ var _modules_dark_mode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/dark-mode */ "./src/modules/dark-mode.js");
+/* harmony import */ var _modules_rastreamento__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/rastreamento */ "./src/modules/rastreamento.js");
 // Import files 
+
 
 
 
@@ -209,6 +247,7 @@ __webpack_require__.r(__webpack_exports__);
 (0,_modules_front_page__WEBPACK_IMPORTED_MODULE_1__["default"])();
 (0,_modules_menu__WEBPACK_IMPORTED_MODULE_2__["default"])();
 (0,_modules_dark_mode__WEBPACK_IMPORTED_MODULE_3__["default"])();
+(0,_modules_rastreamento__WEBPACK_IMPORTED_MODULE_4__["default"])();
 })();
 
 /******/ })()
